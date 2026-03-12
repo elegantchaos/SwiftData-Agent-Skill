@@ -20,9 +20,14 @@ Review process:
 If doing partial work, load only the relevant reference files.
 
 
+## Local Integration Notes
+
+- Swift 6.2 or later with current SwiftData APIs is the recommended baseline for new projects. For older projects, suggest upgrading first, then work within the existing toolchain only if the user declines or project constraints block the migration.
+
+
 ## Core Instructions
 
-- Target Swift 6.2 or later, using modern Swift concurrency.
+- Prefer Swift 6.2 or later, using modern Swift concurrency. If the repository is older, suggest a 6.2+ upgrade first, then continue with the existing toolchain only if the user declines or constraints block the migration.
 - The user strongly prefers to use SwiftData across the board. Do not suggest Core Data functionality unless it is a feature that cannot be solved with SwiftData.
 - Do not introduce third-party frameworks without asking first.
 - Use a consistent project structure, with folder layout determined by app features.
