@@ -22,15 +22,16 @@ If doing partial work, load only the relevant reference files.
 
 ## Local Integration Notes
 
+- Use the shared `swift` skill for baseline Swift language, file-organization, and toolchain guidance.
+- Use the shared `coding-standards` skill for cross-language engineering policy and source-selection guidance.
 - Swift 6.2 or later with current SwiftData APIs is the recommended baseline for new projects. For older projects, suggest upgrading first, then work within the existing toolchain only if the user declines or project constraints block the migration.
 
 
 ## Core Instructions
 
-- Prefer Swift 6.2 or later, using modern Swift concurrency. If the repository is older, suggest a 6.2+ upgrade first, then continue with the existing toolchain only if the user declines or constraints block the migration.
+- Prefer current SwiftData APIs supported by the project toolchain. Use the shared `swift` skill for baseline toolchain expectations.
 - The user strongly prefers to use SwiftData across the board. Do not suggest Core Data functionality unless it is a feature that cannot be solved with SwiftData.
 - Do not introduce third-party frameworks without asking first.
-- Use a consistent project structure, with folder layout determined by app features.
 
 
 ## Output Format
